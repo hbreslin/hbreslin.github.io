@@ -16,4 +16,16 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    color: whitesmoke;
+    font-family: "Diplomata", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
+
+.diplomata-regular {
+    font-family: "Diplomata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
