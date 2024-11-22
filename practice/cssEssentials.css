@@ -1,0 +1,72 @@
+/* 
+Inline elements:
+    line up next to eachother in the 
+    browser and don't taje up anymore 
+    room than their content needs
+    ex. span, img, strong, em
+Block level:
+    take up the whole page and always 
+    start on a new line
+    ex. p, div, h2
+    
+*/
+
+span{
+    /* make a inline element a block element */
+    display: block;
+}
+
+div{
+    /* make a block element an inline element */
+    display: inline;
+}
+
+
+h1{
+    /* change color of text*/
+    color: blue;
+    /* change background color */
+    background-color: #21d1cb;
+    /* change font size */
+    font-size: 30px;
+
+    /* Add text decoration */
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+
+    font-family: Arial;
+
+    /* text alignment in section */
+    text-align: center; 
+
+    
+}
+
+p{
+    color:  blueviolet;
+    text-align: right;
+    /* set space between lines */
+    line-height: 30px;
+    /* space between letters */
+    letter-spacing: 2px;
+
+    /* split text into columns */
+
+    column-count: 3; /* How many columns you want it split into*/
+    column-gap: 10px;
+}
+
+ul{
+    /* three different properties */
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: blue; */
+
+    /* compounded version */
+    /* border: 2px solid blue; */
+
+    /* limited sides */
+    border-left: 2px solid black;
+    border-top: 10px solid #21d1cb;
+    list-style: square;    
+}
