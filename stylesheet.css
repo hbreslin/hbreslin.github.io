@@ -13,24 +13,23 @@
 
 :root{
     /* Some Variables for color presets */
-    --text-color: #2B2D42;
-    --link-color: #43275b;
-    --linkHover-color: #2b1241;
+    /* --text-color:rgba(25, 49, 77, 255); */
+    --text-color: #03244d;
+    /* --text-color: #dee0ff; */
+    /* --link-color: #43275b; */
+    --link-color: #03244d;
+    --linkHover-color:#047293;
     /* --link-color: #56282e; */
     /* --background-color: #F1DEDE; */
     /* --background-color: #bdedfe;  */
-
-    --background-color: #eaebed; 
-
-
+    --background-color:  rgb(134, 223, 255); 
+    /* --background-color:#0c014e;  */
     /* --border-color: rgb(255, 249, 241);  */
-    --border-color: #ce6d8b;
-
-
+    --border-color: rgb(134, 223, 255); 
+    /* --border-color:#0c014e;  */
     --text-font-general: "Titan One", sans-serif;
     --aboutme-font: "Quattrocento", serif;
-
-    --content-width: 97%;
+    --inner-window-width: 100%;
     /* --background-color: #f0f9fc; */
 }
 
@@ -41,6 +40,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--text-font-general);
+    /* color: var(--text-color); */
 }
 
 
@@ -61,55 +61,67 @@ body{
 
 a{
     /* change anchor tags (links) to link color */
-    color: var(--link-color);
+    /* color: var(--text-color); */
+    font-size: 18px;
+    transition: background-color 0.4s ease-in-out , font-size 0.5s ease-out;
+    /* transition: font-size [duration] [timing-function] [delay]; */
+    color: var(--border-color);
+    background-color: var(--link-color);
+    padding: 5px 15px;
+    border-radius: 8px;
     /* remove underline */
     text-decoration: none;
+}
+
+a:hover{
+    /* color: var(--linkHover-color); */
+    /* text-decoration: underline; */
+
+    color: var(--link-color);
+    background-color: var(--border-color);
+    transition: background-color 0.4s ease-in-out , font-size 0.5s ease-out;
+    font-size: 20px;
 }
 
 
 /* Navigation Bar Styling */
 nav{
+    width: 95%;
+    height: 60px;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    background-color: rgba(61, 175, 216, 0.783);
+    border: 2px solid rgb(34, 144, 184);
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
-    height: 80px;
-}
-
-/* navbar Left Side links */
-nav .leftNav a{
-    font-size: 30px;
+    /* padding: 0px 50px; */
+    
+    font-size: 20px;
     font-weight: 600;
     
 }
 
+/* navbar Left Side links */
+nav .leftNav{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
 /* navbar right Side links */
 nav .rightNav a{
-    font-size: 18px;
-    font-weight: 400;
-    /* Spacing between links */
+    /* font-size: 20px; */
     margin: 0 10px;
 }
 
-nav .rightNav a:hover{
-    color: var(--linkHover-color);
-}
+/* nav .rightNav a:hover{
+    color: var(--link-color);
 
-/* Target the righmost link */
-nav .rightNav a:last-child{
-    color: var(--border-color);
-    background-color: var(--link-color);
-    /* add padding */
-    padding: 5px 15px;
-    border-radius: 8px;
-}
-nav .rightNav a:last-child:hover{
-    color: var(--background-color);
-    background-color: var(--linkHover-color);
-    /* add padding */
-    padding: 5px 15px;
-    border-radius: 8px;
-}
+} */
+
+
 
 /* target the span inside the anchor tags to add space between icon and text*/
 nav .rightNav a span{
@@ -120,25 +132,20 @@ nav .rightNav a span{
 #headerWrapper{
     display: flex;
     justify-content: center;
-    margin: 0  auto;
-    width: var(--content-width);
-    align-self: center;
-    /* align-items: center; */
-    /* width: 95%; */
+    /* margin-top: 2vh; */
     
 }
 
 .headerImage {
-
     background-image: url(/images/backIm1.png);
-    background-position: center;
-    /* width: 95%; */
-    width: 100%;
-    height: 250px;
-    background-position: 50% 85%; /* Adjust cropping */
+    /* width: 90%; */
+    /* width: var(--inner-window-width); */
+    width: 95%;
+    height: 300px;
+    background-position: 50% 80%; 
     background-size: 100%; /* Adjust zoom */
     background-repeat: no-repeat;
-    /* margin: 5vw 0 ; */
+    margin: 0 auto;
     display: flex;
     justify-content: center; /* Horizontally centers content */
     align-items: flex-end; /* Aligns content to the bottom of the box */
@@ -157,9 +164,26 @@ nav .rightNav a span{
     text-align: right; /* Optional: align text within the element */
 }
 
+.headerImage .headshot {
+    background-image: url(/images/h1.png);
+    background-position: 50% 80%; 
+    background-size: cover; /* Ensures the image covers the space */
+    width: 20vw; /* Define a specific size */
+    height: 20vw; /* Define a specific size */
+    border-radius: 50%; /* Make it circular */
+    position: relative;
+    padding-bottom: -5vw;
+    top: 10vw;
+    /* background-color: var(--text-color);; */
+    padding: 5px 25px;
+}
+
+
 .headerImage .nameText {
-    color: var(--text-color);
-    font-size: 8vw;
+    /* color: var(--text-color); */
+    /* background-color: ; */
+    font-style: italic;
+    font-size: 6vw;
     font-weight: 600;
     letter-spacing:0.4vw;
     
@@ -169,23 +193,50 @@ nav .rightNav a span{
     padding-bottom: -5vw;
     text-align: center;
     top: 5vw;
+    /* background-color: var(--text-color);; */
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: 2px solid #03244d ;
+    background-color: #7dd8f0d3;
+}
+
+
+
+.headerImage .nameText span{
+    /* background-color: #72dcf9 ; */
+    /* co */
+    /* background-color: var(--text-color);;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: 2px solid #03244d ; */
+    color: var(--text-color);
+    
 }
 
 
 .aboutMe{
-    width: var(--content-width);
-    height: 30vw;
+    /* width: 90%; */
+    /* width: var(--inner-window-width); */
+    width: 95%;
+    height: auto;
     margin: auto;
-    font-size: 1.3vw;
+    /* margin-top: 40vh; */
+    
+    font-size: 1.5vw;
+    background-image: linear-gradient(to bottom, var(--background-color), rgb(34, 144, 184));
     /* margin-top: 10vh; */
     /* padding-top: 200px; */
-    display: flex;
-    justify-content: space-between;
+    display: flexbox;
+    /* display: flex; */
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0 5vw;
-    padding-top: 10vh;
+    padding-top: 40vh;
     background-color: var(--background-color);
     font-family: var(--aboutme-font);
+    border: 2px solid rgb(34, 144, 184);
+    /* border-color: rgb(34, 144, 184);
+    border-width: 2px; */
 }
 
 .aboutMe .leftAM{
@@ -219,7 +270,7 @@ nav .rightNav a span{
 
 /* Adjust link positioning for screen width */
 
-@media(max-width: 800px){
+@media(max-width: 600px){
     /* NAVBAR */
     nav{
         padding: 0 20px;
@@ -257,7 +308,7 @@ nav .rightNav a span{
         gap: 1vw; /* Adjust spacing for smaller screens */
     }
     .aboutMe .leftAM img{
-        width: 40%;
+        width: 60%;
         height: auto;
         /* display: none; */
     }
