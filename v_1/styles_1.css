@@ -107,8 +107,7 @@
     padding: 40px;
     margin: 40px;
 }
-
-.circle-photo{
+.circle-photo {
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -117,14 +116,20 @@
     margin-left: 125px;
     flex-shrink: 0;
     align-self: center;
-    /* display:inline-block;
-    vertical-align:middle; */
-
-    
+    background-image: url(/images/circle_placeholder.png);
+    position: relative; /* Necessary for centering the inner element */
 }
 
-.circle-photo img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
+.circle-photo .inner-img {
+    background-image: url(/images/h.png);
+    border-radius: 50%;    
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    background-size: cover; /* Ensure the image scales to fit */
+    background-position: 20% 40%; /* Adjust these percentages to move the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
