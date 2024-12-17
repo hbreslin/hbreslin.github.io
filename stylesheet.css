@@ -9,6 +9,24 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
+
+.merriweather-sans {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+  
+
+
+.markazi-text {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
   
 
 :root{
@@ -23,11 +41,13 @@
     /* --background-color: #F1DEDE; */
     /* --background-color: #bdedfe;  */
     --background-color:  rgb(134, 223, 255); 
+    --background-color2: rgb(34, 144, 184);
     /* --background-color:#0c014e;  */
     /* --border-color: rgb(255, 249, 241);  */
     --border-color: rgb(134, 223, 255); 
     /* --border-color:#0c014e;  */
-    --text-font-general: "Titan One", sans-serif;
+    --text-font-general:  "Markazi Text", serif;
+    /* "Titan One", sans-serif; */
     --aboutme-font: "Quattrocento", serif;
     --inner-window-width: 100%;
     /* --background-color: #f0f9fc; */
@@ -71,6 +91,7 @@ a{
     border-radius: 8px;
     /* remove underline */
     text-decoration: none;
+    stroke-width: 400;
 }
 
 a:hover{
@@ -80,47 +101,54 @@ a:hover{
     color: var(--link-color);
     background-color: var(--border-color);
     transition: background-color 0.4s ease-in-out , font-size 0.5s ease-out;
-    font-size: 20px;
+    /* font-size: 22px; */
+    stroke-width: 400;
 }
 
 
 /* Navigation Bar Styling */
-nav{
+/* Navigation Bar Styling */
+nav {
     width: 95%;
     height: 60px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4vh;
-    background-color: rgba(61, 175, 216, 0.783);
+    background-color: rgba(61, 175, 216, 0.783); /* Slight transparency */
     border: 2px solid rgb(34, 144, 184);
     justify-content: space-between;
     align-items: center;
-    /* padding: 0px 50px; */
-    
     font-size: 20px;
     font-weight: 600;
-    
+    position: sticky;
+    top: 0; /* Sticks the navbar at the top when scrolling */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow effect for visual separation */
+    background-color: rgba(61, 175, 216, 0.9); /* Optional: Less transparency for better contrast */
 }
+
 
 /* navbar Left Side links */
 nav .leftNav{
     margin: 0 10px;
+    /* color: var(--link-color); */
+    /* font-size: 20px; */
+}
+
+nav .leftNav a{
+    color: var(--link-color);
     font-size: 20px;
+    border: none;
+    background-color: transparent;
 }
 
 
 /* navbar right Side links */
 nav .rightNav a{
-    /* font-size: 20px; */
+    font-size: 15px;
     margin: 0 10px;
 }
-
-/* nav .rightNav a:hover{
-    color: var(--link-color);
-
-} */
-
 
 
 /* target the span inside the anchor tags to add space between icon and text*/
@@ -141,8 +169,8 @@ nav .rightNav a span{
     /* width: 90%; */
     /* width: var(--inner-window-width); */
     width: 95%;
-    height: 300px;
-    background-position: 50% 80%; 
+    height: 250px;
+    background-position: 50% 90%; 
     background-size: 100%; /* Adjust zoom */
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -164,19 +192,6 @@ nav .rightNav a span{
     text-align: right; /* Optional: align text within the element */
 }
 
-.headerImage .headshot {
-    background-image: url(/images/h1.png);
-    background-position: 50% 80%; 
-    background-size: cover; /* Ensures the image covers the space */
-    width: 20vw; /* Define a specific size */
-    height: 20vw; /* Define a specific size */
-    border-radius: 50%; /* Make it circular */
-    position: relative;
-    padding-bottom: -5vw;
-    top: 10vw;
-    /* background-color: var(--text-color);; */
-    padding: 5px 25px;
-}
 
 
 .headerImage .nameText {
@@ -200,73 +215,222 @@ nav .rightNav a span{
     background-color: #7dd8f0d3;
 }
 
-
-
 .headerImage .nameText span{
-    /* background-color: #72dcf9 ; */
-    /* co */
-    /* background-color: var(--text-color);;
-    padding: 5px 25px;
-    border-radius: 15px;
-    border: 2px solid #03244d ; */
     color: var(--text-color);
     
 }
 
 
-.aboutMe{
-    /* width: 90%; */
-    /* width: var(--inner-window-width); */
+.pageBody{
     width: 95%;
     height: auto;
     margin: auto;
-    /* margin-top: 40vh; */
     
     font-size: 1.5vw;
     background-image: linear-gradient(to bottom, var(--background-color), rgb(34, 144, 184));
-    /* margin-top: 10vh; */
-    /* padding-top: 200px; */
-    display: flexbox;
+
     /* display: flex; */
-    /* justify-content: space-between; */
-    align-items: center;
+
+    /* align-items: center; */
     padding: 0 5vw;
-    padding-top: 40vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     background-color: var(--background-color);
     font-family: var(--aboutme-font);
     border: 2px solid rgb(34, 144, 184);
-    /* border-color: rgb(34, 144, 184);
-    border-width: 2px; */
+}
+
+
+.aboutMe{
+    /* width: 95%;
+    height: auto;
+    margin: auto; */
+    
+    /* font-size: 1.5vw; */
+    /* background-image: linear-gradient(to bottom, var(--background-color), rgb(34, 144, 184)); */
+
+    display: flex;
+
+    align-items: center;
 }
 
 .aboutMe .leftAM{
     display: flex;
+    display: block;
     align-items: center;
+    width: 40vw; 
+    font-size: 1.5vw;
+    /* padding-left:  1vw; */
 }
 
-.aboutMe .leftAM span{
-    font-weight: 400;
-    padding-left: 1vw;
-    width: 40vw;
+.aboutMe .leftAM .hi{
+    font-weight: 600;
+    font-size: 1.6vw;
+    /* padding-left: 1vw; */
+    /* width: 40vw; */
     line-height: 1.3;
-    font-family: var(--aboutme-font);
+    padding-bottom: 1vh;
+
+    /* font-family: var(--aboutme-font); */
 }
 
-.aboutMe .leftAM img {
-    width: 15vw;
-    height: 15vw;
+.aboutMe .leftAM h2{
+    font-weight: 400;
+    font-size: 1.2vw;
+    /* padding-left: 1vw; */
+    width: 45vw;
+    line-height: 1.3;
+    /* font-family: var(--aboutme-font); */
+}
+
+.aboutMe .rightAm{
+    display: flex;
+    justify-content: center; /* Centers the headshot horizontally */
+    align-items: center; /* Centers the headshot vertically */
+    width: 100%;
+}
+
+
+.aboutMe .rightAm .headshot {
+    background-image: url(/images/h1.png);
+    width: 20vw;
+    height: 20vw;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 80%; 
+    border:10px solid var(--background-color2);
+    background-size: cover; /* Ensures the image covers the space */
     border-radius: 50%;
+    position: relative;
+    margin-left: 10vw;
+    padding: 5px 25px;
 }
 
-.aboutMe .rightAM img {
-    width: 100%; /* Ensure the image scales to its container's width */
-    max-width: 40vw; /* Restrict the maximum width to 40vw */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Ensure the image fills the container without distortion */
-    overflow: hidden; /* Prevent content overflow */
+.projects{
+    padding-top: 10vh;
+    font-size: 1.5vw;
+    /* display: flex;
+    justify-content: left;  Centers text horizontally */
+    /* align-items: center;      Centers text vertically */
+    /* font-family: var(--aboutme-font); */
+    
+}
+
+.projects h1{
+    /* width:10vw; */
+    padding: 1vw 1vw;
+    background-color: var(--background-color);
+    /* border:  8px solid white; */
+    border-radius: 8px;
+    margin-left: -1vw;
+    /* border-color: white; */
+    
+}
+
+.projectLinks {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    /* Creates a responsive grid with a minimum width of 200px */
+    gap: 50px; 
+    /* Adds spacing between the grid items */
+    margin: 2vw 0; /* Optional margin to add space around the grid */
+    justify-content: space-between;
+}
+
+.projectLinks a {
+    
+    all: unset; /* Resets all styles */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: flex;
+    flex-direction: column; /* Stacks the image and text vertically */
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    /* background-color: var(--background-color); */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center; /* Ensures the text is centered below the image */
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.projectLinks a img {
+    width: 90%;
+    height: 80%; /* Ensures the image keeps its aspect ratio */
+    object-fit: cover; /* Ensures the image fills the container */
+}
+
+.projectLinks a p {
+    margin-top: 10px; /* Adds space between image and text */
+    font-size: 1.2vw; /* Adjusts the text size */
+    font-weight: 600; /* Optional: Makes the text bold */
+    color: var(--link-color);
+    background-color: var(--background-color);
+    padding: 2px 2px;
+    border-radius: 5px;
 }
 
 
+.projectLinks a:hover  {
+    transform: scale(1.1); /* Slight zoom effect when hovering over the image */
+}
+
+
+
+
+.projects #resume {
+    display: block;
+    margin: 20px auto; /* Centers the PDF horizontally and adds some margin around it */
+    max-width: 100%; 
+    max-height: 95vh; /* Limits the height of the PDF */
+}
+
+.contactMe{
+    margin-top: 10vh;
+    padding: 1vw 1vw;
+    background-color: var(--background-color);
+    font-size: 1.5vw;
+    border-radius: 8px;
+    margin-left: -1vw;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.contactMe h1{
+    text-decoration: underline;
+}
+
+.links {
+    padding-top: 1vw;
+    font-size: 1.2vw;
+    display: flex;
+    /* flex-direction: column; Stack links vertically */
+    gap: 1.5vw; /* Adjust the gap between links as needed */
+}
+
+.links a {
+    display: inline-block; /* Makes the link a block-level element to support scaling */
+    text-decoration: none; /* Ensure the link doesn't have any underline by default */
+    /* color: inherit; Inherit text color from parent */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for both transform and background-color */
+}
+
+.links a:hover {
+    background-color: var(--link-color);
+    color: var(--background-color);
+    transform: scale(1.1); /* Slight zoom effect when hovering over the link */
+}
+
+
+/* .contactMe h1{
+    padding: 1vw 1vw;
+    background-color: var(--background-color);
+    border:  8px solid white; 
+    border-radius: 8px;
+    margin-left: -1vw;
+} 
+*/
 
 /* Adjust link positioning for screen width */
 

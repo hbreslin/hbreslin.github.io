@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Titan+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Rampart+One&family=Titan+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Quattrocento:wght@400;700&family=Rampart+One&family=Titan+One&display=swap" rel="stylesheet">
+    
     <!-- Icon import -->
     <script src="https://kit.fontawesome.com/48bf51e00e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,32 +30,26 @@
      <nav>
         <!-- split navbar into two sections -->
          <div class="leftNav">
-            <!-- <i class="fa-solid fa-city"></i> -->
-            <a href="/portf/index.html">
-                <i class="fa-solid fa-city"></i>
-                <span>HOME</span>
+            <a href="/index.html">
+                H. Breslin
                 <!-- HOME -->
             </a>
          </div>
 
          <div class="rightNav">
-            <!-- <a href="">
-                <i class="fa-solid fa-folder"></i>
-                <span>Coursework</span>
-            </a> -->
-
-            <a href="/portf/projects.html">
-                <i class="fa-solid fa-folder"></i>
+            <a href="#Projects">
+                <!-- <i class="fa-solid fa-folder"></i> -->
+                <i class="fa-solid fa-screwdriver-wrench"></i>
                 <span>Coursework/Projects</span>
             </a>
 
-            <a href="/portf/resume.html">
-                <i class="fa-solid fa-folder"></i>
+            <a href="#Resume">
+                <i class="fa-regular fa-file"></i>
                 <span>Resume</span>
             </a>
 
-            <a href="/portf/index.html">
-                <i class="fa-solid fa-folder"></i>
+            <a href="#GetInTouch">
+                <i class="fa-regular fa-paper-plane"></i>
                 <span>Get In Touch</span>
             </a>
          </div>
@@ -67,35 +66,97 @@
                     <span>Chicago, IL</span>
                     <i class="fa-solid fa-location-dot"></i>
                 </h1>
-                <span class="headshot"></span>
-                <h1 class="nameText">
-                    
-                    <span>Hi, I'm Haley!</span>
-                </h1>
-                <!-- <img src="/images/backIm1.png" alt=""> -->
             </div>
          </section>
 
          <!-- Sub-Section 2 : info and scrolling Images-->
-         <section class="aboutMe">
-            <!-- About Me writing -->
-            <div class="leftAM">
-                <!-- <img src="/images/h.png" alt=""> -->
-                <!-- <img src="images/h.png"> -->
-                <span>ABOUT ME:<br>
-                    I'm a Junior at the University of Chicago
-                    studying Computer Science and Media Arts and Design. I have a particular interest in UI/UX design and Human Computer Interaction</span>
-                <!-- <p>ABOUT ME:<br>
-                    I'm a Junior at the University of Chicago
-                    studying Computer Science and Media Arts and Design. I have a particular interest in UI/UX design and Human Computer Interaction </p> -->
-            </div>
-            <!-- About Me Images -->
-             <div class="rightAM">
-                <img src="/images/diverPoster.png" alt="">
-             </div>
+
+         <section class="pageBody">
+            <section class="aboutMe">
+                <!-- About Me writing -->
+                <div class="leftAM">
+                    <h1 class = "hi"> Hi, I'm Haley!</h1>
+                    <h2>
+                        I'm a Junior at the University of Chicago
+                        studying Computer Science and Media Arts and Design. 
+                        I have a keen interest in Human-Computer Interaction (HCI), 
+                        accessible design, and creative development. 
+                        <br> <br>
+                        I have always been drawn to the intersections of logic, 
+                        creativity, and technology that computer science presents. 
+                        The ability to create experiecnes that are not only functional but also 
+                        accessible, enagaging, and memorable drives my passion for 
+                        design and development. 
+                        <br><br>
+                        Outside of working on games, apps, and robots, you can find me 
+                        organizing philanthropy events to support literacy through my sorority, 
+                        working with non-profits like Watsi and Code Your Dreams, and experimenting 
+                        with other artistic endeavors. 
+                        
+                    </h2>
+                </div>
+                <div class="rightAm">
+                    <div class="headshot"></div>
+    
+                </div>
+             </section>
+
+             <!-- <section class="scroll">
+                <p>scroll</p>
+             </section> -->
+             <section class="projects" id="Projects">
+                <h1>Projects</h1>
+                
+                <section class="projectLinks">
+                    <!-- <img src="images/diverImg.png" alt=""> -->
+                    
+                    <a href="">
+                        <img src="images/diverImg.png" alt="">
+                        <p>AR Diver Interface</p>
+                    </a>
+                    <a href="">
+                        <img src="/images/pong.png" alt="">
+                        <p>Hands and Eyes Free Pong</p>
+                    </a>
+                    <a href="">
+                        <img src="images/ggs.png" alt="">
+                        <p>Green Gaurdians</p>
+                    </a>
+                    <a href="">
+                        <img src="images/dancebotImg.png" alt="">
+                        <p>DanceBot</p>
+                    </a>
+                    <a href="">
+                        <!-- <img src="/images/pong.png" alt=""> -->
+                        <p>Edovo Python Lessons</p>
+                    </a>
+                </section>
+             </section>
+
+            <section class="projects" id="Resume">
+                <h1>Resume</h1>
+                <embed src="/images/Resume.pdf" id="resume" width="900px" height="1200px" />
+            </section>
+
+
+            <section class="contactMe" id="GetInTouch">
+                
+                
+                
+                <h1>Get In Touch</h1>
+                <div class="links">
+                    <a href="mailto: hbreslin@uchicago.edu">hbreslin@uchicago.edu</a>
+                    <a href="https://www.linkedin.com/in/haley-breslin-b5471b1b0/" target="_blank">LinkedIn</a>
+                </div>
+            </section>
+
 
 
          </section>
+
+         
+         
+
 
 
      </main>
