@@ -1,5 +1,6 @@
 import data from "../assets/introduction.json"
 import introImg from "../assets/im3.png"
+import pythonLogo from "../assets/python-logo-only.png"
 
 export default function Introduction(){
     return(
@@ -18,11 +19,11 @@ export default function Introduction(){
                     </h3>
                     <div className="Skills">
                         {/* skills scrolling */}
-                        <img src={null} alt="" className="SkillImg"/>
-                        <img src={null} alt="" className="SkillImg"/>
-                        <img src={null} alt="" className="SkillImg"/>
-                        <img src={null} alt="" className="SkillImg"/>
-                        <img src={null} alt="" className="SkillImg"/>
+                        <img src={pythonLogo} alt="" style={{backgroundColor:"#ffffff00"}} className="SkillImg"/>
+                        <img src={null} alt="SkillImg" className="SkillImg"/>
+                        <img src={null} alt="SkillImg" className="SkillImg"/>
+                        <img src={null} alt="SkillImg" className="SkillImg"/>
+                        <img src={null} alt="SkillImg" className="SkillImg"/>
                     </div>
                 </div>
 
