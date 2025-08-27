@@ -1,0 +1,80 @@
+.project-page {
+    width: 100svw;
+    height: 70svh;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    box-sizing: border-box;
+    /* background-color: pink; */
+}
+
+.project-text {
+    width: 35rem;
+    height: 40rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+}
+
+.project-title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: -0.5rem;
+}
+
+.project-subtitle {
+    margin: 10px 0 0 0;
+}
+
+.project-paragraph {
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+    border-left: 5px solid #F4A261;
+    /* border-radius: 5px; */
+}
+
+.project-image {
+    width: 40svw;
+    height: 30svw;
+    border: 1px solid black;
+    background-color: rgb(247, 239, 239);
+}
+
+/* .project-button {
+    height: 5rem;
+    width: 5rem;
+    align-self: center;
+    background-color: #E76F51;
+    color: white;
+    margin: 1rem;
+} */
+.project-button {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    padding: 0rem 2rem 4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Remove the default browser highlight */
+    outline: none;
+  }
+  
+  .project-button:focus {
+    outline: none;
+    box-shadow: none; /* removes glow in some browsers */
+  }
+  
+  .icon {
+    color: #e76f51ed;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .project-button:hover .icon {
+    color: #E76F51;
+    transform: scale(1.2);
+  }
+  

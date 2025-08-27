@@ -1,0 +1,27 @@
+[
+    {
+      "projectName": "Portfolio Website",
+      "subtitle": "Personal Branding",
+      "description": "A React-based personal portfolio to showcase my projects and resume.",
+      "role": "Developer & Designer",
+      "subjects": ["Web Development", "UI/UX"],
+      "image": "/assets/image.png"
+    },
+    {
+      "projectName": "RepairFlow",
+      "subtitle": "Machine Learning Experiment",
+      "description": "Built a system that classifies toaster issues and suggests fixes.",
+      "role": "Researcher",
+      "subjects": ["Machine Learning", "NLP"],
+      "image": "/assets/image.png"
+    },
+    {
+      "projectName": "AR Diver Project",
+      "subtitle": "Unity + VR",
+      "description": "A Unity VR game with dynamic TextMeshPro and interactive panels.",
+      "role": "Gameplay Programmer",
+      "subjects": ["Unity", "C#", "VR"],
+      "image": "/assets/image.png"
+    }
+  ]
+  
