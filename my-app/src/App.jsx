@@ -21,7 +21,7 @@ function App() {
     function getSiteView(){
         if(siteView===0){
             return(<Introduction></Introduction>)
-        } else if(siteView===1){
+        } else if(viewPage===1){
             return(<Project></Project>)
         } else{
             return(<Introduction></Introduction>)
@@ -29,27 +29,16 @@ function App() {
     }
 
   return (
-    <div style={{ position: "fixed",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        textAlign: "center",
-        width: "100%",
-        zIndex: 9999}}>
-        <p style={{alignSelf:"center", margin:"auto", textAlign:'center'}}>This Page is under construction! For now, you can find me on <a href="https://www.linkedin.com/in/haley-breslin-b5471b1b0">LinkedIn</a> </p>
-    </div>
-    
-    
+    <AppContext.Provider value={{projectPage,setProjectPage, numProjects, setNumProjects, siteView, setSiteView}}>
+        <>
+            <Background></Background>
+            {getSiteView()}
+
+            {/* <Introduction></Introduction> */}
+        {/* <p>This Page is under construction! For now, you can find me on <a href="https://www.linkedin.com/in/haley-breslin-b5471b1b0">LinkedIn</a> </p> */}
+        </>
+    </AppContext.Provider>
   )
 }
 
 export default App
-
-/*<AppContext.Provider value={{projectPage,setProjectPage, numProjects, setNumProjects, siteView, setSiteView}}>
- <>
-     { <Background></Background>
-     {getSiteView()} }
-
-     {<Introduction></Introduction> }
- </>
-</AppContext.Provider> */
