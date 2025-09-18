@@ -1,8 +1,8 @@
 import linesVector from '../assets/linesVector.png'
 import vector1 from '../assets/Vector1.png'
 import Introduction from './Introduction'
-import { AppContext } from '../AppContext'
-import { useContext } from 'react'
+import { AppContext } from '../AppContext';
+import { useContext } from 'react';
 
 
 export default function Background(){
@@ -13,15 +13,18 @@ export default function Background(){
     function onProject(){
         setSiteView(1)
     }
+    function onResume(){
+        setSiteView(2)
+    }
     return(
         <>
             <div className="Header raised-element">
-                <button onClick={onHome}>HOME</button>
+                <button onClick={onHome}>H. Breslin</button>
                 {/* <a href=""><b>HOME</b></a> */}
                 <div>
-                    <button>ABOUT</button>
+                    <button onClick={onHome}>ABOUT</button>
                     <button onClick={onProject}>PROJECTS</button>
-                    <button>RESUME</button>
+                    <button onClick={onResume}>RESUME</button>
                     {/* <a href="" on><b>ABOUT</b></a>
                     <a href=""><b>PROJECTS</b></a>
                     <a href=""><b>RESUME</b></a> */}

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-bottom: 6rem; /* space for icons */
+    height: 80svh; /* total height of resume area */
+    overflow: hidden; /* keep scroll confined to inner content */
+  }
+  
+  .container .content {
+    flex: 1;              /* take up remaining height */
+    overflow-y: auto;     /* enable vertical scrolling */
+    padding-right: 1rem;  /* optional: space so scrollbar doesn't cover text */
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  .resume-header{
+    align-self:"center";
+    margin: 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem;
+  }

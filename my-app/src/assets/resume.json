@@ -1,0 +1,130 @@
+{
+    "name": "Haley Breslin",
+    "contact": {
+      "email": "HBreslin@uchicago.edu",
+      "phone": "(703) 401-6184"
+    },
+    "sections": [
+      {
+        "title": "Education",
+        "items": [
+          {
+            "heading": "The University of Chicago — Chicago, IL",
+            "subheading": "Bachelor of Arts in Computer Science & Media Art and Design",
+            "date": "Expected June 2026",
+            "details": [
+              "GPA: 3.86/4.0",
+              "Relevant Courses: Systems Programming, Educational Game Design, Computational Sociology, Theory of Algorithms, Robotics, HCI, ML Foundations, Reading & Research",
+              "Honors: University of Chicago Dean’s List 2024-2025"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Experience",
+        "items": [
+          {
+            "heading": "Human-Computer Integration Lab",
+            "subheading": "Lab Assistant — Chicago, IL",
+            "date": "March 2024 – Current",
+            "details": [
+              "Designed and developed a tool to help users navigate repair information, making repairs more accessible and reducing e-waste"
+            ]
+          },
+          {
+            "heading": "Code Your Dreams",
+            "subheading": "Summer Intern — Chicago, IL",
+            "date": "June 2024 – August 2024",
+            "details": [
+              "Created an introductory Python course for Edovo tablets used in 750+ correctional facilities",
+              "Coordinated tasks, meetings, and deadlines for a team of five interns",
+              "Built the REV ION FRC 2023 Starter Bot for robotics education"
+            ]
+          },
+          {
+            "heading": "Watsi",
+            "subheading": "Summer Intern — San Francisco, CA",
+            "date": "June 2023 – August 2023",
+            "details": [
+              "Created templates for donor-facing patient profiles",
+              "Founded the first high school Watsi team and created a fundraising guidebook",
+              "Edited and published nearly 100 patient profiles; trained volunteers in editing"
+            ]
+          },
+          {
+            "heading": "Ex Libris Café",
+            "subheading": "Shift Lead — Chicago, IL",
+            "date": "March 2023 – Current",
+            "details": [
+              "Managed shifts while maintaining a full course load",
+              "Ensured cleanliness, safety, and customer service standards",
+              "Recognized with awards and promotions for leadership"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Leadership & Activities",
+        "items": [
+          {
+            "heading": "Pi Beta Phi",
+            "subheading": "Vice President of Recruitment & Community Relations — Chicago, IL",
+            "date": "April 2023 – Current",
+            "details": [
+              "Organized 10+ hour recruitment events for 400+ women; exceeded recruitment targets by 70%",
+              "Received training in DEI and leadership strategies",
+              "Tutored local students in literacy skills",
+              "Organized philanthropy event with 600+ attendees raising $10,000+"
+            ]
+          },
+          {
+            "heading": "Sidwell Friends School",
+            "subheading": "Computer Science Teacher’s Assistant — Washington, D.C.",
+            "date": "September 2021 – May 2022",
+            "details": [
+              "Taught Python and Java in an intro CS course",
+              "Supported students by providing resources, explaining topics, and debugging projects"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Projects",
+        "items": [
+          {
+            "heading": "Green Guardians MVP",
+            "subheading": "Unity, Game Design, C#",
+            "details": [
+              "Built an educational game simulation about eco-friendly choices for 4th graders"
+            ]
+          },
+          {
+            "heading": "Dancing Turtlebot3 MVP",
+            "subheading": "Computer Vision, ML, Python, ROS",
+            "details": [
+              "Created an ASL recognition model with TensorFlow for real-time camera input",
+              "Integrated with Turtlebot3 to trigger dance patterns from recognized letters"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Skills",
+        "items": [
+          {
+            "heading": "Languages",
+            "details": ["French (conversational reading/writing)", "English (native)"]
+          },
+          {
+            "heading": "Programming",
+            "details": ["Java", "JavaScript", "Python", "C++", "C"]
+          },
+          {
+            "heading": "Tools",
+            "details": ["Microsoft Office Suite", "GitHub", "Unity", "Flask", "React", "CSS", "HTML"]
+          }
+        ]
+      }
+    ]
+  }
+  

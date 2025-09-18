@@ -1,44 +1,72 @@
-import { useState, useContext, useEffect } from 'react'
-import './App.css'
-import Background from './components/Background'
-import Introduction from './components/Introduction'
-import Project from './components/Project'
-import { AppContext } from './AppContext'
-import projects from "./projectJsons/projects.json"
+import { useState, useContext } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import "./App.css";
+import Background from "./components/Background";
+import Introduction from "./components/Introduction";
+import Project from "./components/Project";
+import { AppContext } from "./AppContext";
+import projects from "./projectJsons/projects.json";
+import Resume from "./components/Resume";
 
 function App() {
-//   const [count, setCount] = useState(0)
-    const [projectPage,setProjectPage]=useState(0)
-    const [numProjects, setNumProjects]=useState(projects.length)
-    const [siteView, setSiteView]=useState(0);
-
-    // useEffect(()=>{
-    //     setNumProjects(projects.length)
-    //     console.log(numProjects)
-    // }, [projects.length])
-    // useEffect(()=>{
-
-    function getSiteView(){
-        if(siteView===0){
-            return(<Introduction></Introduction>)
-        } else if(viewPage===1){
-            return(<Project></Project>)
-        } else{
-            return(<Introduction></Introduction>)
-        }
-    }
+  const [projectPage, setProjectPage] = useState(0);
+  const [numProjects, setNumProjects] = useState(projects.length);
+  const [siteView, setSiteView] = useState(0);
 
   return (
-    <AppContext.Provider value={{projectPage,setProjectPage, numProjects, setNumProjects, siteView, setSiteView}}>
-        <>
-            <Background></Background>
-            {getSiteView()}
+    <AppContext.Provider
+      value={{
+        projectPage,
+        setProjectPage,
+        numProjects,
+        setNumProjects,
+        siteView,
+        setSiteView,
+      }}
+    >
+      <>
+        <Background />
 
-            {/* <Introduction></Introduction> */}
-        {/* <p>This Page is under construction! For now, you can find me on <a href="https://www.linkedin.com/in/haley-breslin-b5471b1b0">LinkedIn</a> </p> */}
-        </>
+        <AnimatePresence mode="wait">
+          {siteView === 0 && (
+            <motion.div
+              key="intro"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Introduction />
+            </motion.div>
+          )}
+
+          {siteView === 1 && (
+            <motion.div
+              key="project"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Project />
+            </motion.div>
+          )}
+
+          {siteView === 2 && (
+            <motion.div
+              key="resume"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Resume />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </>
     </AppContext.Provider>
-  )
+  );
 }
 
-export default App
+export default App;
