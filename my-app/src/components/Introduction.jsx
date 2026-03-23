@@ -47,7 +47,7 @@ export default function Introduction() {
               <motion.img
                 key={imageIndex}
                 src={projects[imageIndex]?.image}
-                className="HomeImage raised-element"
+                className="home-image raised-element"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -61,7 +61,7 @@ export default function Introduction() {
               <motion.img
                 key={imageIndex + 1}
                 src={projects[(imageIndex + 1) % projects.length]?.image}
-                className="HomeImage raised-element"
+                className="home-image raised-element"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}

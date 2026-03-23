@@ -6,20 +6,20 @@
       "description": "A unique game experience that utilizes traditional game mechanics to embody experiences related to OCD",
       "role": "Solo Developer",
       "subjects": ["Game Design", "Unity", "C#"],
-      "image": "/assets/QuotidienTemp.png",
+      "image": "/assets/q1.png",
       "concept": [
         "Quotidien is an experimental game that uses familiar collection mechanics to explore experiences associated with obsessive-compulsive disorder. Players take on the role of a squirrel preparing for winter, gathering materials like feathers and sticks to build a nest. A friendly narrator guides this process, initially offering practical advice on how to collect and organize resources.",
         "Over time, the narrator shifts from a helpful guide to a controlling presence, mirroring the internal logic of OCD. Its suggestions become increasingly specific, then prescriptive, then impossible to satisfy. Rather than responding to the player’s needs, the narrator generates new rules and corrections, framing them as necessary for safety or completeness. This voice positions itself as rational and protective, but instead traps the player in cycles of repetition, where each action creates the need for further action.",
         "By the final act, the player is faced with an impossible standard of perfection under increasing pressure. The intended resolution is not completion, but refusal—recognizing the narrator as an unreliable, compulsive voice and choosing to disengage. Returning home reveals that the player had already built a functional nest, reframing their prior actions and highlighting how systems can manufacture urgency, anxiety, and a false sense of necessity."
       ],
-      "process":[]
+      "process":["----This section is under construction----"]
     },
     {
       "projectName": "Wave Gloves",
       "status": "In Development",
       "subtitle": "Midi Instrument and Control Surface",
-      "description": "A easily portable midi instrument and control surface contructed using basic sensors.",
-      "role": "Interaction Designer & Software Developer",
+      "description": "A portable midi instrument and control surface contructed using basic sensors.",
+      "role": "Interaction & Software Developer",
       "subjects": ["Hardware", "UX"],
       "image": "/assets/WaveGloves2.png",
       "caption":"Final Prototype",
@@ -49,17 +49,12 @@
       "description": "A React-based personal portfolio to showcase my projects and resume.",
       "role": "Developer & Designer",
       "subjects": ["Web Development", "UI/UX"],
-      "image": "/assets/t2.png",
+      "image": "/assets/portfolio.png",
       "concept": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
-        "In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.",
-        {
-          "text": "Portfolio homepage layout example:",
-          "image": {
-            "src": "/assets/t2.png",
-            "caption": "Portfolio homepage mockup"
-          }
-        }
+        "----This section is under construction----"
+      ],
+      "process":[
+        "----This section is under construction----"
       ]
     },
     {
@@ -69,23 +64,12 @@
       "description": "Built a system that classifies toaster issues and suggests fixes.",
       "role": "Researcher",
       "subjects": ["Machine Learning", "NLP"],
-      "image": "/assets/QuotidienTemp.png",
+      "image": "/assets/RepairFlow1.png",
       "concept": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
-        "In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor."
-      ]
-    },
-    {
-      "projectName": "AR Diver Project",
-      "status": "Completed",
-      "subtitle": "Unity + VR",
-      "description": "A Unity VR game with dynamic TextMeshPro and interactive panels.",
-      "role": "Gameplay Programmer",
-      "subjects": ["Unity", "C#", "VR"],
-      "image": "/assets/t1.png",
-      "concept": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
-        "In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor."
+        "----This section is under construction----"
+      ],
+      "process":[
+        "----This section is under construction----"
       ]
     }
   ]

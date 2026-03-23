@@ -110,7 +110,22 @@ export default function Project() {
         </AnimatePresence>
       </div>
 
-      <AnimatePresence mode="wait">
+      <div className="project-image-container">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={projectPage}
+            src={currentProject.image || null}
+            alt="project visual"
+            className="project-image"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.5 }}
+          />
+        </AnimatePresence>
+      </div>
+
+      {/* <AnimatePresence mode="wait">
         <motion.img
           key={projectPage}
           src={currentProject.image || null}
@@ -121,7 +136,7 @@ export default function Project() {
           exit={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.5 }}
         />
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       <button className="project-button" onClick={goNext}>
         <FontAwesomeIcon icon={faAngleRight} size="4x" className="icon" />

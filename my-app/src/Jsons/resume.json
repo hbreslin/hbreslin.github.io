@@ -13,8 +13,8 @@
             "subheading": "Bachelor of Arts in Computer Science & Media Art and Design",
             "date": "Expected June 2026",
             "details": [
-              "GPA: 3.86/4.0",
-              "Relevant Courses: Systems Programming, Educational Game Design, Computational Sociology, Theory of Algorithms, Robotics, HCI, ML Foundations, Reading & Research",
+              "GPA: 3.88/4.0",
+              "Relevant Courses:  Inventing, Engineering, and Understanding Interactive Devices; Systems Programming; Educational Game Design; Computational Sociology; Theory of Algorithms; Robotics; HCI; ML Foundations; Reading & Research in Computer Science",
               "Honors: University of Chicago Dean’s List 2024-2025"
             ]
           }
@@ -78,12 +78,12 @@
             ]
           },
           {
-            "heading": "Sidwell Friends School",
-            "subheading": "Computer Science Teacher’s Assistant — Washington, D.C.",
-            "date": "September 2021 – May 2022",
+            "heading": "The University of Chicago",
+            "subheading": "Robotics Teacher’s Assistant — Chicago, IL",
+            "date": "September 2025 – December 2025",
             "details": [
-              "Taught Python and Java in an intro CS course",
-              "Supported students by providing resources, explaining topics, and debugging projects"
+                "Led lab sections guiding students in programming and controlling TurtleBots using ROS (Robot Operating System), emphasizing sensor integration",
+                "Supported students by providing resources, explaining complex robotics concepts, and assisting with debugging code and hardware issues"
             ]
           }
         ]

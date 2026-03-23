@@ -1,22 +1,103 @@
+/* Full-page container centers the panel */
 .container {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding-left: 2rem;
-    padding-bottom: 6rem; /* space for icons */
-    height: 80svh; /* total height of resume area */
-    overflow: hidden; /* keep scroll confined to inner content */
-  }
-  
-  .container .content {
-    flex: 1;              /* take up remaining height */
-    overflow-y: auto;     /* enable vertical scrolling */
-    padding-right: 1rem;  /* optional: space so scrollbar doesn't cover text */
-    padding-top: 0%;
-    margin-top: 0%;
-  }
-  .resume-header{
-    align-self:"center";
-    margin: 1rem 1rem 1rem;
-    padding: 1rem 1rem 1rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  /* background-color: #f0f0f0; */
+}
+
+/* Resume panel */
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  width: 90svw;
+  max-width: 900px;
+  height: 65svh;
+  background-color: #fefefe;
+  padding: 2rem;
+  margin-bottom: 15svh;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  overflow: hidden; /* content scroll confined */
+}
+
+/* Header */
+.resume-header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #27456c;
+  text-shadow: 1px 1px 2px #f4a3615b;
+}
+
+/* Scrollable content area */
+.resume-page .content {
+  flex: 1; /* fill remaining height */
+  overflow-y: auto; /* scrollable */
+  /* scroll-behavior: smooth; */
+  padding-right: 1rem;
+}
+
+/* Section styling */
+.Section {
+  margin-bottom: 2rem;
+}
+
+.Section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--site-light-orange);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  color: #27456c;
+}
+
+/* Item styling */
+.Item {
+  margin-bottom: 1rem;
+}
+
+.Item h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.25rem 0;
+  color: #111;
+}
+
+.Item p {
+  margin: 0.1rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.Item .Date {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: right;
+}
+
+.Item div p {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  color: #333;
+  line-height: 1.4rem;
+}
+
+/* Scrollbar styling */
+.resume-page .content::-webkit-scrollbar {
+  width: 8px;
+}
+.resume-page .content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.resume-page .content::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 4px;
+}
+.resume-page .content::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
