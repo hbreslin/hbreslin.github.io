@@ -246,9 +246,9 @@ p {
   margin-top: 1rem;
 }
 .SkillImg {
-  width: 50px;
-  height: auto;
-  background-color: gray;
+  width: auto;
+  height: 50px;
+  /* background-color: gray; */
 }
 .LineDesign {
   width: 100svw;

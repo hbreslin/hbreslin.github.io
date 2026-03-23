@@ -1,4 +1,9 @@
 import pythonLogo from "../assets/python-logo-only.png";
+import unityLogo from "../assets/unityIm.png";
+import cLogo from "../assets/C.png";
+import reactLogo from "../assets/React.png";
+import figmaLogo from "../assets/Figma.png";
+
 import { useEffect, useContext, useState, useRef } from "react";
 import projects from "../Jsons/projects.json";
 import { motion, AnimatePresence } from "framer-motion";
@@ -90,10 +95,10 @@ export default function Introduction() {
               style={{ backgroundColor: "#ffffff00" }}
               className="SkillImg"
             />
-            <img src={null} alt="SkillImg" className="SkillImg" />
-            <img src={null} alt="SkillImg" className="SkillImg" />
-            <img src={null} alt="SkillImg" className="SkillImg" />
-            <img src={null} alt="SkillImg" className="SkillImg" />
+            <img src={unityLogo} alt="SkillImg" className="SkillImg" />
+            <img src={cLogo} alt="SkillImg" className="SkillImg" />
+            <img src={reactLogo} alt="SkillImg" className="SkillImg" />
+            <img src={figmaLogo} alt="SkillImg" className="SkillImg" />
           </div>
         </div>
       </div>
