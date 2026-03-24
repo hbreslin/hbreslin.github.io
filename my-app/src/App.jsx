@@ -13,6 +13,7 @@ import CaseStudy from "./components/CaseStudy";
 import AboutMe from "./components/AboutMe";
 
 function App() {
+  // random comment so i can push
   const [projectPage, setProjectPage] = useState(0);
   const [numProjects, setNumProjects] = useState(projects.length);
   const [siteView, setSiteView] = useState(0);
