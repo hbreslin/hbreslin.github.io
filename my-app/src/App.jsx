@@ -44,37 +44,81 @@ function App() {
         setSiteView,
       }}
     >
-      <>
-        {isMobile ? (
-          <div className="mobile-placeholder">
-            <h1>Mobile Coming Soon</h1>
-            <p>
-              This site is best experienced on desktop for now. Mobile support
-              is on the way!
-            </p>
-          </div>
-        ) : (
-          <>
-            <Background />
+      {isMobile ? (
+        <div className="mobile-placeholder">
+          <h1>Mobile Coming Soon!</h1>
+          <p>This site is best experienced on desktop for now.</p>
+          <p>Mobile support is on the way!</p>
+        </div>
+      ) : (
+        <>
+          <Background />
 
-            <AnimatePresence mode="wait">
-              {siteView === 0 && (
-                <motion.div
-                  key="intro"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <Introduction />
-                </motion.div>
-              )}
+          <AnimatePresence mode="wait">
+            {siteView === 0 && (
+              <motion.div
+                key="intro"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                {/* Render the right component based on viewport */}
+                {/* {isMobile ? <MobileIntroduction /> : <Introduction />} */}
+                <Introduction></Introduction>
+              </motion.div>
+            )}
 
-              {/* rest unchanged */}
-            </AnimatePresence>
-          </>
-        )}
-      </>
+            {siteView === 1 && (
+              <motion.div
+                key="project"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Project />
+              </motion.div>
+            )}
+
+            {siteView === 2 && (
+              <motion.div
+                key="resume"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Resume />
+              </motion.div>
+            )}
+
+            {siteView === 3 && (
+              <motion.div
+                key="caseStudy"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                <CaseStudy />
+              </motion.div>
+            )}
+
+            {siteView === 4 && (
+              <motion.div
+                key="aboutMe"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                <AboutMe />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </>
+      )}
     </AppContext.Provider>
   );
 }
