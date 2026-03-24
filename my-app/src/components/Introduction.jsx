@@ -78,14 +78,6 @@ export default function Introduction() {
         <div className="Description">
           <h1>Hey, I'm Haley!</h1>
           <h2>Designer, Researcher, Creative</h2>
-          {/* <h3>
-            {data.introductionText.map((text, index) => (
-              <span key={index}>
-                {text}
-                <br />
-              </span>
-            ))}
-          </h3> */}
           <WordCloud words={myWords} />
           <div className="Skills">
             {/* skills scrolling */}
