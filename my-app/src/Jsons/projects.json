@@ -3,31 +3,39 @@
       "projectName": "Quotidien",
       "status": "In Development",
       "subtitle": "Game Design",
-      "description": "A unique game experience that utilizes traditional game mechanics to embody experiences related to OCD",
+      "description": "Quotidien is an experimental narrative game that uses familiar collection mechanics to explore the lived experience of obsessive-compulsive disorder (OCD).",
       "role": "Solo Developer",
       "subjects": ["Game Design", "Unity", "C#"],
-      "image": "/assets/q1.png",
+      "image": "/assets/HaleyBreslin-byJasonSmith-2814.jpg",
+      
+      "caption":"Scene from Quotidien",
       "concept": [
         "Quotidien is an experimental game that uses familiar collection mechanics to explore experiences associated with obsessive-compulsive disorder. Players take on the role of a squirrel preparing for winter, gathering materials like feathers and sticks to build a nest. A friendly narrator guides this process, initially offering practical advice on how to collect and organize resources.",
-        "Over time, the narrator shifts from a helpful guide to a controlling presence, mirroring the internal logic of OCD. Its suggestions become increasingly specific, then prescriptive, then impossible to satisfy. Rather than responding to the player’s needs, the narrator generates new rules and corrections, framing them as necessary for safety or completeness. This voice positions itself as rational and protective, but instead traps the player in cycles of repetition, where each action creates the need for further action.",
+        "Over time, the narrator shifts from a helpful guide to a controlling presence, mirroring the internal logic of OCD. Its suggestions become increasingly specific, then prescriptive, then impossible to satisfy. Rather than responding to the player's needs, the narrator generates new rules and corrections, framing them as necessary for safety or completeness. This voice positions itself as rational and protective, but instead traps the player in cycles of repetition, where each action creates the need for further action.",
         "By the final act, the player is faced with an impossible standard of perfection under increasing pressure. The intended resolution is not completion, but refusal—recognizing the narrator as an unreliable, compulsive voice and choosing to disengage. Returning home reveals that the player had already built a functional nest, reframing their prior actions and highlighting how systems can manufacture urgency, anxiety, and a false sense of necessity."
       ],
-      "process":["----This section is under construction----"]
+      "process":[
+        "This project was developed through an iterative, systems-driven design process focused on aligning mechanics with thematic intent. I began by identifying core interactions that could naturally map onto obsessive-compulsive patterns. Collection, sorting, and cleaning were selected because they are widely understood mechanics that players rarely question, allowing them to serve as a foundation for more complex behavioral systems. By grounding the experience in recognizable interactions, I was able to establish player trust early without drawing attention to the underlying thematic structure.",
+        "From there, I developed initial prototypes centered on object interaction and inspection. Players could approach items, examine their qualities through a UI, and decide whether or not to collect them. These early systems were intentionally stable and intuitive, reinforcing the expectation that the game would follow familiar and manageable rules. This stage was less about difficulty and more about creating a reliable interaction loop that players could internalize before any escalation occurred.",
+        "Once this baseline was established, I introduced the narrator as a system-level guide embedded within gameplay. Rather than functioning as a separate narrative layer, the narrator directly informed player actions through suggestions that gradually became more prescriptive. I focused on maintaining a consistent tone while subtly shifting the intent behind the dialogue, allowing the escalation to emerge through changes in instruction rather than overt narrative cues. This approach helped preserve player trust while slowly introducing tension.",        
+        "The escalation phase was designed as a systemic transformation rather than a sudden shift. I began layering additional rules onto existing mechanics, increasing ambiguity around what constituted a “correct” action. Systems such as contamination were introduced to complicate decision-making, creating feedback loops where progress could be undone or require further action. These mechanics were tuned to increase cognitive load over time, encouraging players to question the validity of the rules they were following without explicitly signaling that something was wrong.",        
+        "Playtesting played a critical role in refining this balance. I focused on identifying the moment when players began to feel discomfort, as well as whether that discomfort felt earned or frustrating. Feedback from these sessions informed adjustments to dialogue pacing, system clarity, and escalation timing. The goal was to ensure that players remained engaged long enough to experience the full arc of the game while still arriving at their own realization about the narrator’s role.",
+        "Throughout development, I approached the project as an exploration of how systems can shape perception and behavior. Each iteration was guided by the question of whether the mechanics were reinforcing the intended experience, leading to continuous refinement of how rules were introduced, communicated, and ultimately destabilized."]
     },
     {
       "projectName": "Wave Gloves",
       "status": "In Development",
-      "subtitle": "Midi Instrument and Control Surface",
-      "description": "A portable midi instrument and control surface contructed using basic sensors.",
+      "subtitle": "MiDi Instrument and Control Surface",
+      "description": "A portable MiDi instrument and control surface constructed using basic sensors.",
       "role": "Interaction & Software Developer",
       "subjects": ["Hardware", "UX"],
       "image": "/assets/WaveGloves2.png",
       "caption":"Final Prototype",
       "url":"https://www.youtubeeducation.com/watch?v=8phMbTRlIGY",
       "concept": [
-        "For an interactive devices course, my team developed a wearable MIDI instrument and control surface that translates hand movement into expressive musical input, exploring how physical gestures can shape digital sound in real time. Built using embedded sensors, the device captures motion data and maps it to parameters such as pitch, modulation, and effects, allowing performers to interact with sound through embodied movement rather than traditional interfaces.",
+        "For an interactive devices course, my team developed a wearable MiDi instrument and control surface that translates hand movement into expressive musical input, exploring how physical gestures can shape digital sound in real time. Built using embedded sensors, the device captures motion data and maps it to parameters such as pitch, modulation, and effects, allowing performers to interact with sound through embodied movement rather than traditional interfaces.",
         {
-            "text":"The device utilizes four sensors—a flex sensor, force sensor, stretch sensor, and IMU—connected to a Xiao RP2350 microcontroller and housed in a custom 3D-printed casing. Sensors are distributed across both hands to separate control and expression. The stretch sensor maps continuous hand expansion to note values, enabling dynamic pitch control, while the force sensor acts as the primary trigger for sending MIDI note data. A flex sensor is used to initiate and record gesture input, allowing the system to capture intentional movements rather than constant noise.", 
+            "text":"The device utilizes four sensors—a flex sensor, force sensor, stretch sensor, and IMU—connected to a Xiao RP2350 microcontroller and housed in a custom 3D-printed casing. Sensors are distributed across both hands to separate control and expression. The stretch sensor maps continuous hand expansion to note values, enabling dynamic pitch control, while the force sensor acts as the primary trigger for sending MiDi note data. A flex sensor is used to initiate and record gesture input, allowing the system to capture intentional movements rather than constant noise.", 
             "image":{
                 "src":"/assets/WaveGloves1.png", 
                 "caption":"Wave Gloves System" 
@@ -38,12 +46,12 @@
       ],
       "process": [
         "The development process focused on translating ambiguous physical gestures into stable and expressive digital signals. Early iterations involved testing individual sensors in isolation to understand their range, noise, and responsiveness. This informed decisions about sensor selection and placement, particularly how to distribute input across both hands to balance control and playability.",
-        "I led the design and implementation of the software system, developing the logic that maps sensor data to MIDI output. A key challenge was filtering noisy or continuous input into intentional actions. To address this, I introduced gating mechanisms—such as using the flex sensor to explicitly trigger IMU data capture—ensuring that gestures were deliberate rather than accidental. This allowed for more reliable control while preserving expressive movement.",
+        "I led the design and implementation of the software system, developing the logic that maps sensor data to MiDi output. A key challenge was filtering noisy or continuous input into intentional actions. To address this, I introduced gating mechanisms—such as using the flex sensor to explicitly trigger IMU data capture—ensuring that gestures were deliberate rather than accidental. This allowed for more reliable control while preserving expressive movement.",
         "Interaction design decisions were developed in parallel with hardware prototyping. Sensor mappings were iteratively refined to create a layered system of input, combining discrete triggers (force sensor) with continuous modulation (stretch sensor and IMU)."
       ]
     },
     {
-      "projectName": "Portfolio Website",
+      "projectName": "Custom Portfolio Website",
       "status": "In Development",
       "subtitle": "Personal Branding",
       "description": "A React-based personal portfolio to showcase my projects and resume.",
@@ -51,10 +59,18 @@
       "subjects": ["Web Development", "UI/UX"],
       "image": "/assets/portfolio.png",
       "concept": [
-        "----This section is under construction----"
+        "This portfolio is a custom-built web application for presenting projects and experience in a clear and structured format. It was developed from scratch to allow for flexibility in layout, interaction, and content organization. The design focuses on clarity and navigation, using simple transitions and responsive layouts to guide users through different sections without relying on traditional page-based navigation."
       ],
-      "process":[
-        "----This section is under construction----"
+      "process": [
+        {
+            "text":"I began by designing the structure and visual language of the site in Figma, focusing on how users would navigate between projects and sections. Rather than treating pages as separate entities, I approached the layout as a continuous system, where transitions between views would feel seamless and intentional. I used this as an opportunity to explore color palettes and layouts until I found one that felt like me.",
+            "image":{
+                "src":"/assets/portfolio1.png",
+                "caption":"caption"
+            }
+        },
+        "The site was built using React, with state-driven navigation controlling which sections are visible at any given time. I implemented animated transitions using Framer Motion to create smooth changes between views, reinforcing hierarchy and improving usability.",
+        "A key focus of development was maintaining consistency across components while allowing flexibility for different types of content. I structured project data through JSON to separate content from presentation, making the site easier to scale and update over time."
       ]
     },
     {

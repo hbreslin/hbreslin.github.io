@@ -89,26 +89,6 @@
         ]
       },
       {
-        "title": "Projects",
-        "items": [
-          {
-            "heading": "Green Guardians MVP",
-            "subheading": "Unity, Game Design, C#",
-            "details": [
-              "Built an educational game simulation about eco-friendly choices for 4th graders"
-            ]
-          },
-          {
-            "heading": "Dancing Turtlebot3 MVP",
-            "subheading": "Computer Vision, ML, Python, ROS",
-            "details": [
-              "Created an ASL recognition model with TensorFlow for real-time camera input",
-              "Integrated with Turtlebot3 to trigger dance patterns from recognized letters"
-            ]
-          }
-        ]
-      },
-      {
         "title": "Skills",
         "items": [
           {
@@ -117,11 +97,11 @@
           },
           {
             "heading": "Programming",
-            "details": ["Java", "JavaScript", "Python", "C++", "C"]
+            "details": ["Java, JavaScript, Python, C++, C#, CSS, HTML"]
           },
           {
             "heading": "Tools",
-            "details": ["Microsoft Office Suite", "GitHub", "Unity", "Flask", "React", "CSS", "HTML"]
+            "details": ["Git, Unity, Flask, React, Figma"]
           }
         ]
       }

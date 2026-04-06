@@ -1,6 +1,7 @@
 import { useEffect, useRef, useContext } from "react";
 import data from "../Jsons/introduction.json";
-import haleyImg from "../assets/haley1.jpg";
+import haleyImg from "../assets/HaleyBreslin-byJasonSmith-2794.jpg";
+
 import { AppContext } from "../AppContext";
 import "../styling/AboutMe.css";
 import { AnimatePresence, motion } from "framer-motion";
