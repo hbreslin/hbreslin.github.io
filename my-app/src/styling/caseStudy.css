@@ -160,3 +160,30 @@
   font-style: italic;
   text-shadow: none;
 }
+
+.case-study-download {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--site-light-orange, #f4a361);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.download-button:hover {
+  background-color: var(--site-dark-orange, #e07c2c);
+}
+
+.download-caption {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.5rem;
+  text-align: center;
+}

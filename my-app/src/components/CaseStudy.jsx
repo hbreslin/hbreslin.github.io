@@ -227,6 +227,22 @@ export default function CaseStudy() {
             </h3>
           )}
         </div>
+        {currentProject.downloadLink && (
+          <div className="case-study-download">
+            <a
+              href={currentProject.downloadLink}
+              download
+              className="download-button"
+            >
+              ⬇️ Download Prototype
+            </a>
+            {currentProject.downloadCaption && (
+              <div className="download-caption">
+                {currentProject.downloadCaption}
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

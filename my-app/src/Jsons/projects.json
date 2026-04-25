@@ -8,6 +8,8 @@
       "subjects": ["Game Design", "Unity", "C#"],
       "image": "/assets/HaleyBreslin-byJasonSmith-2814.jpg",
       "caption": "Scene from Quotidien",
+      "downloadLink": "https://drive.google.com/your-link-here",
+  "downloadCaption": "Download from Google Drive (Windows, ~200MB)",
       "sections": [
         {
           "title": "Concept",
@@ -37,6 +39,7 @@
             
           ]
         }
+        
       ]
     },
     {
