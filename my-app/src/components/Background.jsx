@@ -37,7 +37,7 @@ export default function Background() {
 
         {/* Desktop Logo */}
         <button className="hide-mobile" onClick={onHome}>
-          H. Breslin
+          H. Breslin | HBreslin@uchicago.edu
         </button>
 
         {/* Desktop Links */}

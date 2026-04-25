@@ -13,50 +13,62 @@
   padding-left: 2rem;
   margin-right: 2rem;
 
-  display: flex; /* 👈 important */
-  flex-direction: column; /* 👈 important */
-  /* overflow: hidden; 👈 matches resume */
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
+  /* Remove text-shadow from container - it affects ALL text including captions */
+}
 
+/* Apply text-shadow only to actual content paragraphs, not captions */
+.case-study-text p {
   text-shadow: 2px 2px 2px #f4a3615b;
 }
 
 /* ---------------- Image inside text ---------------- */
 
 .case-study-paragraph {
-  display: flex; /* row layout for inline images */
-  flex-direction: row; /* text left, image right */
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  gap: 1rem; /* spacing between text and image */
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
 .case-study-paragraph p {
-  flex: 1; /* text takes available space */
+  flex: 1;
   margin: 0;
 }
 
 .case-study-paragraph img {
-  width: 200px; /* constrain image size */
+  width: 200px;
   height: auto;
   object-fit: contain;
   box-shadow: 2px 2px 4px #27456c;
   border-radius: 4px;
 }
 
+/* Captions inside paragraphs - override text-shadow */
+.case-study-paragraph .image-caption {
+  display: block;
+  font-size: 0.8rem;
+  color: #333; /* Darker for readability */
+  text-align: center;
+  margin-top: 0.25rem;
+  font-style: italic;
+  text-shadow: none; /* Remove shadow */
+}
+
 /* ---------------- Main standalone image ---------------- */
 
 .case-study-image {
   width: 20svw;
-  height: 30svw;
-  /* border: 1px solid black; */
+  height: auto; /* Changed from 30svw to prevent distortion */
   background-color: rgb(247, 239, 239);
   box-shadow: 2px 2px 4px #27456c;
 }
 
 .case-study-media {
-  height: 220px;
-  display: flex;
+  display: flex; /* Removed fixed height */
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -64,8 +76,9 @@
 
 .case-study-caption {
   font-size: 0.9rem;
-  color: #555;
+  color: #333; /* Darker for readability */
   text-align: center;
+  text-shadow: none;
 }
 
 .case-study-outline {
@@ -82,4 +95,68 @@
   align-self: flex-start;
   margin: 0.25rem 0.25rem;
   padding: 0rem 0.25rem;
+}
+
+/* Media section after Process */
+.case-study-media-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.media-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.media-item {
+  width: 100%;
+}
+
+.media-video .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #1a1a1a;
+}
+
+.media-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.media-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media captions - dark and readable */
+.media-caption {
+  display: block;
+  font-size: 0.85rem;
+  color: #333; /* Darker for readability */
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  text-shadow: none;
+}
+
+/* Image caption class (used in multiple places) */
+.image-caption {
+  display: block;
+  font-size: 0.8rem;
+  color: #333;
+  text-align: center;
+  margin-top: 0.25rem;
+  font-style: italic;
+  text-shadow: none;
 }

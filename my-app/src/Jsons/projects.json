@@ -3,24 +3,41 @@
       "projectName": "Quotidien",
       "status": "In Development",
       "subtitle": "Game Design",
-      "description": "Quotidien is an experimental narrative game that uses familiar collection mechanics to explore the lived experience of obsessive-compulsive disorder (OCD).",
+      "description": "Quotidien is an experimental puzzle-based exploration game that uses familiar collection mechanics to explore the lived experience of obsessive-compulsive disorder (OCD).",
       "role": "Solo Developer",
       "subjects": ["Game Design", "Unity", "C#"],
       "image": "/assets/HaleyBreslin-byJasonSmith-2814.jpg",
-      
-      "caption":"Scene from Quotidien",
-      "concept": [
-        "Quotidien is an experimental game that uses familiar collection mechanics to explore experiences associated with obsessive-compulsive disorder. Players take on the role of a squirrel preparing for winter, gathering materials like feathers and sticks to build a nest. A friendly narrator guides this process, initially offering practical advice on how to collect and organize resources.",
-        "Over time, the narrator shifts from a helpful guide to a controlling presence, mirroring the internal logic of OCD. Its suggestions become increasingly specific, then prescriptive, then impossible to satisfy. Rather than responding to the player's needs, the narrator generates new rules and corrections, framing them as necessary for safety or completeness. This voice positions itself as rational and protective, but instead traps the player in cycles of repetition, where each action creates the need for further action.",
-        "By the final act, the player is faced with an impossible standard of perfection under increasing pressure. The intended resolution is not completion, but refusal—recognizing the narrator as an unreliable, compulsive voice and choosing to disengage. Returning home reveals that the player had already built a functional nest, reframing their prior actions and highlighting how systems can manufacture urgency, anxiety, and a false sense of necessity."
-      ],
-      "process":[
-        "This project was developed through an iterative, systems-driven design process focused on aligning mechanics with thematic intent. I began by identifying core interactions that could naturally map onto obsessive-compulsive patterns. Collection, sorting, and cleaning were selected because they are widely understood mechanics that players rarely question, allowing them to serve as a foundation for more complex behavioral systems. By grounding the experience in recognizable interactions, I was able to establish player trust early without drawing attention to the underlying thematic structure.",
-        "From there, I developed initial prototypes centered on object interaction and inspection. Players could approach items, examine their qualities through a UI, and decide whether or not to collect them. These early systems were intentionally stable and intuitive, reinforcing the expectation that the game would follow familiar and manageable rules. This stage was less about difficulty and more about creating a reliable interaction loop that players could internalize before any escalation occurred.",
-        "Once this baseline was established, I introduced the narrator as a system-level guide embedded within gameplay. Rather than functioning as a separate narrative layer, the narrator directly informed player actions through suggestions that gradually became more prescriptive. I focused on maintaining a consistent tone while subtly shifting the intent behind the dialogue, allowing the escalation to emerge through changes in instruction rather than overt narrative cues. This approach helped preserve player trust while slowly introducing tension.",        
-        "The escalation phase was designed as a systemic transformation rather than a sudden shift. I began layering additional rules onto existing mechanics, increasing ambiguity around what constituted a “correct” action. Systems such as contamination were introduced to complicate decision-making, creating feedback loops where progress could be undone or require further action. These mechanics were tuned to increase cognitive load over time, encouraging players to question the validity of the rules they were following without explicitly signaling that something was wrong.",        
-        "Playtesting played a critical role in refining this balance. I focused on identifying the moment when players began to feel discomfort, as well as whether that discomfort felt earned or frustrating. Feedback from these sessions informed adjustments to dialogue pacing, system clarity, and escalation timing. The goal was to ensure that players remained engaged long enough to experience the full arc of the game while still arriving at their own realization about the narrator’s role.",
-        "Throughout development, I approached the project as an exploration of how systems can shape perception and behavior. Each iteration was guided by the question of whether the mechanics were reinforcing the intended experience, leading to continuous refinement of how rules were introduced, communicated, and ultimately destabilized."]
+      "caption": "Scene from Quotidien",
+      "sections": [
+        {
+          "title": "Concept",
+          "id": "concept",
+          "content": [
+            "Quotidien is a puzzle-based exploration game where players take on the role of a squirrel preparing for winter, gathering materials like feathers, sticks, and pinecones. Gameplay is built around two core systems: item investigation and inventory sorting. Players inspect objects through a node-based interface to determine their properties, then choose whether to collect them and how to organize them within a constrained inventory. Over the course of the game, these systems become increasingly complex and unreliable, creating a tension between learned behavior and feasibility. The game culminates in an unwinnable loop that forces players to reject the medium's conventions to compulsively strive for perfection and the emotional toll of OCD."
+          ]
+        },
+        {
+          "title": "Game Mechanics as Metaphor",
+          "id": "evolution",
+          "content": [
+            "A key aspect of Quotidien is how its mechanics evolve to reflect the experience of OCD. The game starts with clear, manageable systems that reward careful play and thorough investigation. You're encouraged to inspect every item and keep your inventory perfectly organized, building a habit of seeking optimal decisions. These behaviors are reinforced both through in-game feedback and through broader gaming conventions. At this stage, there's no reason to question the systems—doing so would actually hurt your progress.",
+            "Then the systems begin to degrade. Investigation nodes multiply, but not all of them matter. Inventory rules get stricter and more numerous, increasing the likelihood of mistakes. A timer adds pressure: each level has a countdown that speeds up when your inventory is out of order. You have to balance speed and accuracy, but the systems themselves are becoming less reliable. This creates a conflict between what you've learned and what's actually possible. You've been trained to check everything, but there's no longer enough time. The system demands precision while making it impossible.",
+            "This leads to an unwinnable loop. It's impossible for players to keep up with the demands of the game, but due to existing gaming conventions and the way the systems were designed, many players still try to do it anyway. They keep checking nodes, trying to optimize their inventory, and hoping that if they just do it right, they can beat the timer. But the game is designed so that there is no 'right' way to play anymore. Players can only reach the true end-state by quitting-resisting the compulsion to keep replaying the same unwinnable scenario trying to fix it",
+            "This design is meant to evoke the emotional toll of OCD: the cycle of compulsive behavior, temporary relief, and returning distress. By using familiar game mechanics that players have been conditioned to trust, Quotidien creates space to experience the frustration and anxiety of OCD in a way that is both relatable and impactful. The replaying aspect is a crucial aspect of the design that mirrors my personal experience with OCD, where compulsions often manifested as rumination. The rejection of the compulsion reflects the critical step in OCD tratment where patients learn to sit with distress and resist compulsive behaviors, even when it feels unbearable. The game is less about 'winning' and more about creating an emotional experience that captures the essence of OCD through its mechanics and player journey."
+          ]
+        },
+        {
+          "title": "Process",
+          "id": "process",
+          "content": [
+            "This project was largely driven by the idea of leveraging game mechanics to create an emotional experience paralelling my own experience with OCD. As someone who was only diagnosed in my early 20s, I spent many years both struggling with my symptoms and assuming that my experience was universal. As such, it was important to me that the game be built around familiar mechanics that players would have been conditioned to trust and not realize the underlying issues until they had escalated beyond control. I wanted to create a sense of cognitive dissonance where players are trained to rely on the systems, only for those systems to become unreliable and demand perfection in an impossible way.",
+            "Early ideation focused on identifying mechanics that were both simple and familiar, but also had the potential to evolve in a way that would create tension between player expectations and actual gameplay. The investigation and inventory systems emerged as natural choices because they are common in many games and have clear rules that can be manipulated to create a sense of escalating difficulty and unreliability. These mechanics also translate well to specific subsets of OCD symptoms, such as checking and ordering compulsions, which added a layer of personal resonance to the design.",
+            "Early prototypes included various iterations of the investigation and inventory systems, with a focus on making them feel clear and reliable at the start. The inspection system evolved into a node-based interface that allowed players to explore item properties in a way that felt intuitive and rewarding. The inventory system was designed to encourage organization and optimization, with clear rules about how items could be arranged and what consequences would arise from mistakes. Playtesting at this stage focused on ensuring that players understood the systems and felt like they had control over their decisions, reinforcing the idea that careful play would lead to success.",
+            "Quotidien is under active development, but the core systems and player journey are largely established and were demonstrated at the University of Chicago's 2026 Media Art Data and Design Expo. Future iterations will focus on refining the pacing and balance of the escalating mechanics, as well as adding narrative elements to further immerse players in the experience. The ultimate goal is to create a game that not only captures the emotional essence of OCD but also encourages empathy and understanding for those who live with it."
+            
+          ]
+        }
+      ]
     },
     {
       "projectName": "Wave Gloves",
@@ -30,24 +47,49 @@
       "role": "Interaction & Software Developer",
       "subjects": ["Hardware", "UX"],
       "image": "/assets/WaveGloves2.png",
-      "caption":"Final Prototype",
-      "url":"https://www.youtubeeducation.com/watch?v=8phMbTRlIGY",
-      "concept": [
-        "For an interactive devices course, my team developed a wearable MiDi instrument and control surface that translates hand movement into expressive musical input, exploring how physical gestures can shape digital sound in real time. Built using embedded sensors, the device captures motion data and maps it to parameters such as pitch, modulation, and effects, allowing performers to interact with sound through embodied movement rather than traditional interfaces.",
+      "caption": "Final Prototype",
+      "videoUrl": "https://www.youtube.com/watch?v=8phMbTRlIGY",
+        "videoCaption": "Demo of the Wave Gloves in action",
+      "sections": [
         {
-            "text":"The device utilizes four sensors—a flex sensor, force sensor, stretch sensor, and IMU—connected to a Xiao RP2350 microcontroller and housed in a custom 3D-printed casing. Sensors are distributed across both hands to separate control and expression. The stretch sensor maps continuous hand expansion to note values, enabling dynamic pitch control, while the force sensor acts as the primary trigger for sending MiDi note data. A flex sensor is used to initiate and record gesture input, allowing the system to capture intentional movements rather than constant noise.", 
-            "image":{
-                "src":"/assets/WaveGloves1.png", 
-                "caption":"Wave Gloves System" 
-            }
+          "title": "Concept",
+          "id": "concept",
+          "content": [
+            "Wave Gloves is a wearable MiDi instrument that turns hand movements into sound. Built for an interactive devices course, the glove uses embedded sensors to track motion and map it to pitch, modulation, and effects. The goal was to create a portable, expressive instrument that allows performers to interact with sound through physical gestures rather than traditional interfaces. By distributing control across both hands and combining discrete triggers with continuous modulation, the Wave Gloves aim to reimagine the relationship between performer and instrument, emphasizing embodied movement as a form of musical expression.",           
+            {
+              "text": "The device utilizes four sensors—a flex sensor, force sensor, stretch sensor, and IMU—connected to a Xiao RP2350 microcontroller and housed in a custom 3D-printed casing. Sensors are distributed across both hands to separate control and expression. The stretch sensor maps continuous hand expansion to note values, enabling dynamic pitch control, while the force sensor acts as the primary trigger for sending MiDi note data. A flex sensor is used to initiate and record gesture input, allowing the system to capture intentional movements rather than constant noise.",
+              "image": {
+                "src": "/assets/WaveGloves1.png",
+                "caption": "Wave Gloves System"
+              }
+            },
+            "The IMU drives higher-level interaction by enabling control selection and parameter adjustment through orientation and motion. By tilting or rotating the hand, the performer can switch between control channels and increase or decrease values in real time. This layered mapping creates a system where discrete actions (triggering notes) and continuous gestures (modulating sound) work together, emphasizing expressiveness while maintaining portability.",
+            "This work was inspired by Imogen Heap's MiMU gloves—an innovative wearable instrument that converts hand gestures into musical control—particularly in how it reimagines the relationship between performer and interface."
+          ]
         },
-        "The IMU drives higher-level interaction by enabling control selection and parameter adjustment through orientation and motion. By tilting or rotating the hand, the performer can switch between control channels and increase or decrease values in real time. This layered mapping creates a system where discrete actions (triggering notes) and continuous gestures (modulating sound) work together, emphasizing expressiveness while maintaining portability. The project explores how distributing interaction across the body can create a more intuitive and performative relationship between user and instrument.",
-        "This work was inspired by Imogen Heap's MiMU gloves—an innovative wearable instrument that converts hand gestures into musical control—particularly in how it reimagines the relationship between performer and interface."
+        {
+          "title": "Interaction Model",
+          "id": "interaction",
+          "content": [
+            "The Wave Gloves create a layered interaction model where discrete and continuous gestures work in tandem. A performer might stretch their hand to sweep through pitch ranges, squeeze the force sensor to trigger a note at the desired pitch, and tilt their wrist to apply modulation—all within a single fluid motion. The distribution of control across both hands allows for separation of responsibilities: the dominant hand handles note triggering and pitch shaping, while the non-dominant hand manages control switching and parameter adjustment."
+          ]
+        },
+        {
+          "title": "Process",
+          "id": "process",
+          "content": [
+            "The development process focused on translating ambiguous physical gestures into stable and expressive digital signals. Early iterations involved testing individual sensors in isolation to understand their range, noise, and responsiveness. This informed decisions about sensor selection and placement, particularly how to distribute input across both hands to balance control and playability.",
+            "I led the design and implementation of the software system, developing the logic that maps sensor data to MiDi output. A key challenge was filtering noisy or continuous input into intentional actions. To address this, I introduced gating mechanisms—such as using the flex sensor to explicitly trigger IMU data capture—ensuring that gestures were deliberate rather than accidental. This allowed for more reliable control while preserving expressive movement.",
+            "Interaction design decisions were developed in parallel with hardware prototyping. Sensor mappings were iteratively refined to create a layered system of input, combining discrete triggers (force sensor) with continuous modulation (stretch sensor and IMU)."
+          ]
+        }
       ],
-      "process": [
-        "The development process focused on translating ambiguous physical gestures into stable and expressive digital signals. Early iterations involved testing individual sensors in isolation to understand their range, noise, and responsiveness. This informed decisions about sensor selection and placement, particularly how to distribute input across both hands to balance control and playability.",
-        "I led the design and implementation of the software system, developing the logic that maps sensor data to MiDi output. A key challenge was filtering noisy or continuous input into intentional actions. To address this, I introduced gating mechanisms—such as using the flex sensor to explicitly trigger IMU data capture—ensuring that gestures were deliberate rather than accidental. This allowed for more reliable control while preserving expressive movement.",
-        "Interaction design decisions were developed in parallel with hardware prototyping. Sensor mappings were iteratively refined to create a layered system of input, combining discrete triggers (force sensor) with continuous modulation (stretch sensor and IMU)."
+      "media": [
+        {
+            "type": "video",
+            "url": "https://www.youtube.com/watch?v=8phMbTRlIGY",
+            "caption": "Demo of the Wave Gloves in action"
+        }
       ]
     },
     {
@@ -58,34 +100,73 @@
       "role": "Developer & Designer",
       "subjects": ["Web Development", "UI/UX"],
       "image": "/assets/portfolio.png",
-      "concept": [
-        "This portfolio is a custom-built web application for presenting projects and experience in a clear and structured format. It was developed from scratch to allow for flexibility in layout, interaction, and content organization. The design focuses on clarity and navigation, using simple transitions and responsive layouts to guide users through different sections without relying on traditional page-based navigation."
-      ],
-      "process": [
+      "sections": [
         {
-            "text":"I began by designing the structure and visual language of the site in Figma, focusing on how users would navigate between projects and sections. Rather than treating pages as separate entities, I approached the layout as a continuous system, where transitions between views would feel seamless and intentional. I used this as an opportunity to explore color palettes and layouts until I found one that felt like me.",
-            "image":{
-                "src":"/assets/portfolio1.png",
-                "caption":"caption"
-            }
+          "title": "Concept",
+          "id": "concept",
+          "content": [
+            "This portfolio is a custom-built web application for presenting projects and experience in a clear and structured format. It was developed from scratch to allow for flexibility in layout, interaction, and content organization. The design focuses on clarity and navigation, using simple transitions and responsive layouts to guide users through different sections without relying on traditional page-based navigation."
+          ]
         },
-        "The site was built using React, with state-driven navigation controlling which sections are visible at any given time. I implemented animated transitions using Framer Motion to create smooth changes between views, reinforcing hierarchy and improving usability.",
-        "A key focus of development was maintaining consistency across components while allowing flexibility for different types of content. I structured project data through JSON to separate content from presentation, making the site easier to scale and update over time."
+        {
+          "title": "Process",
+          "id": "process",
+          "content": [
+            {
+              "text": "I began by designing the structure and visual language of the site in Figma, focusing on how users would navigate between projects and sections. Rather than treating pages as separate entities, I approached the layout as a continuous system, where transitions between views would feel seamless and intentional. I used this as an opportunity to explore color palettes and layouts until I found one that felt like me.",
+              "image": {
+                "src": "/assets/portfolio1.png",
+                "caption": "Figma wireframes showing layout exploration"
+              }
+            },
+            "The site was built using React, with state-driven navigation controlling which sections are visible at any given time. I implemented animated transitions using Framer Motion to create smooth changes between views, reinforcing hierarchy and improving usability.",
+            "A key focus of development was maintaining consistency across components while allowing flexibility for different types of content. I structured project data through JSON to separate content from presentation, making the site easier to scale and update over time."
+          ]
+        }
       ]
     },
     {
-      "projectName": "RepairFlow",
-      "status": "Completed",
-      "subtitle": "Machine Learning Experiment",
-      "description": "Built a system that classifies toaster issues and suggests fixes.",
-      "role": "Researcher",
-      "subjects": ["Machine Learning", "NLP"],
-      "image": "/assets/RepairFlow1.png",
-      "concept": [
-        "----This section is under construction----"
+      "projectName": "Dungeon Totem Prototype",
+      "status": "Prototype",
+      "subtitle": "Game Design",
+      "description": "A small RPG-style dungeon prototype combining combat encounters with spatial puzzle mechanics.",
+      "role": "Solo Developer",
+      "subjects": ["Game Design", "Unity", "C#"],
+      "image": "/assets/GamePlay1.png",
+      "caption": "Totem puzzle system unlocking a new area",
+      
+      "sections": [
+        {
+          "title": "Concept",
+          "id": "concept",
+          "content": [
+            "This project explores how combat and puzzle systems can work together to gate player progression within a dungeon environment. Players take on the role of a bow wielding knight navigating a dungeon, fighting skeleton enemies while solving environmental puzzles to progress.",
+            "The core puzzle system is built around a series of interactive totems. Players can activate and rotate each totem to align it with others in the environment. When correctly aligned, the totems form a chain of light that travels through the sequence and connects to a final keystone, triggering progression such as unlocking a door or activating a new puzzle. The design focuses on spatial reasoning, player feedback, and creating a clear sense of cause and effect between interaction and outcome.",
+            {
+              "text": "The combat system is designed to be simple and complementary to the puzzle mechanics. Players can shoot arrows at skeleton enemies that patrol the dungeon, using cover and timing to avoid damage. Combat encounters are interspersed between puzzle areas, providing moments of tension and action while reinforcing the dungeon's atmosphere. The goal is to create a cohesive experience where combat and puzzles feel integrated rather than separate, encouraging players to think strategically about how they approach each section of the dungeon.",
+              "image": {
+                "src": "/assets/GamePlay2.png",
+                "caption": "Combat encounter with skeleton enemies"
+              }
+            }
+          ]
+        },
+       
+        {
+          "title": "Process",
+          "id": "process",
+          "content": [
+            "Prior to this project I had limited experience designing puzzle systems or combat mechanics, so I approached development as an opportunity to explore how these systems could be integrated within a single level. I started by prototyping the totem interaction system, focusing on creating clear visual feedback for activation and rotation. This involved iterating on the design of the totems themselves, as well as the logic for how they would connect and trigger progression. Early testing also included understand how environmental layouts could be designed to maintain smooth progression and engagement with the puzzle mechanics.",
+            "In parallel, I developed a basic combat system with simple enemy AI, allowing players to engage with skeleton enemies while navigating the space. A key challenge was balancing attention between combat and puzzle-solving, ensuring that neither system overwhelmed the other. This prototype gave me experience designing modular puzzle systems, creating visual feedback loops, and integrating multiple gameplay systems within a single level."
+          ]
+        }
       ],
-      "process":[
-        "----This section is under construction----"
+      "media": [
+        {
+            "type": "video",
+            "url": "https://youtu.be/UMtUrR49gI0",
+            "caption": "Short gameplay demo showing totem puzzle and combat encounter"
+        }
       ]
     }
   ]
