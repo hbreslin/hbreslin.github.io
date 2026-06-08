@@ -114,16 +114,28 @@
 }
 
 .case-study-link {
+  background-color: var(--site-light-orange);
+  color: var(--site-white);
+  font-size: 1.2rem;
+
+  /* Use px or rem instead of % */
+  border-radius: 999px;
+
+  /* Increase horizontal padding (0.6rem) so text isn't cramped */
+  padding: 0.1rem 0.3rem;
+
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.9;
   transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
+    opacity 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .case-study-link:hover {
   opacity: 1;
   transform: translateX(3px);
+  background-color: var(--site-dark-orange);
 }
 .project-button:focus {
   outline: none;

@@ -41,6 +41,44 @@
         }
         
       ]
+    },  
+    {
+        "projectName": "Flock Camera Physicalization",
+        "status": "Completed",
+        "subtitle": "Tangible Data Exploration",
+        "description": "An interactive physicalization of Chicago's surveillance network using toio robots to explore the relationship between license plate reader (ALPR) placement and socio-economic factors.",
+        "role": "Interaction Designer",
+        "subjects": ["Robotics", "Data Physicalization", "Social Computing"],
+        "image": "/assets/FlockPhysicalization.png",
+        "videoUrl": "youtube.com/watch?v=EzwxdZFSCVA",
+        "videoCaption": "Demo of the Flock Camera Physicalization in action",
+        "caption": "Tangible interface using toio robots on physical map mats",
+        "sections": [
+        {
+            "title": "Concept",
+            "id": "concept",
+            "content": [
+            "This project explores the 'Public Safety Technology Ecosystem'—a nationwide mass-surveillance infrastructure used by over 5,000 law enforcement agencies. The motivation was to investigate what socio-economic factors impact the placement of these cameras and how they affect targeted groups, such as activists and those seeking reproductive healthcare.",
+            "Using data from the DeFlock Map and Chicago community socio-economic indicators, we created a tangible system to visualize these surveillance networks. The goal is to demonstrate how technology can be used to diminish autonomy rather than grant it."
+            ]
+        },
+        {
+            "title": "Interaction Design",
+            "id": "interaction",
+            "content": [
+            "The system utilizes six toio robots with distinct roles on projection-mapped physical mats. One toio represents a car that the user can 'drive' across the map to discover camera locations in real-time.",
+            "A key design feature is the 'Haptic Lock': when the user drives near a surveillance point, camera toios 'lock on' to the car, preserving the camera's actual field of view (FOV). Feedback is provided through both physical touch (toio resistance) and visual cues via LEDs."
+            ]
+        },
+        {
+            "title": "Process",
+            "id": "process",
+            "content": [
+            "The project involved integrating various datasets, including Chicago Community Boundaries and Census data, to provide a dual-map view (overview and detail) of surveillance density.",
+            "We designed and produced custom 3D-printed enclosures for the toio robots to represent cars and cameras. A major technical challenge was the swarm implementation and avoiding collisions between the 'car' and the camera toios. Future iterations aim to improve toio movement code and add more data filters to compare camera locations with specific community statistics."
+            ]
+        }
+        ]
     },
     {
       "projectName": "Wave Gloves",
@@ -172,4 +210,5 @@
         }
       ]
     }
+      
   ]

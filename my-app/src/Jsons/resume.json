@@ -10,12 +10,13 @@
         "items": [
           {
             "heading": "The University of Chicago — Chicago, IL",
-            "subheading": "Bachelor of Arts in Computer Science & Media Art and Design",
+            "subheading": "Bachelor of Arts in Computer Science, Bachelor of Arts in Media Art and Design",
             "date": "Expected June 2026",
             "details": [
               "GPA: 3.88/4.0",
-              "Relevant Courses:  Inventing, Engineering, and Understanding Interactive Devices; Systems Programming; Educational Game Design; Computational Sociology; Theory of Algorithms; Robotics; HCI; ML Foundations; Reading & Research in Computer Science",
-              "Honors: University of Chicago Dean’s List 2024-2025"
+              "Relevant Courses: Systems Programming; Theory of Algorithms; Introduction to Robotics; Introduction to HCI; Mathematical Foundations of Machine Learning; Inventing, Engineering and Understanding Interactive Devices; Engineering Interactive Electronics onto Printed Circuit Boards; Actuated User Interfaces and Technology",
+              "Honors: University of Chicago Dean’s List 2024-2025",
+              "Magna Cum Laude"
             ]
           }
         ]
@@ -25,40 +26,39 @@
         "items": [
           {
             "heading": "Human-Computer Integration Lab",
-            "subheading": "Lab Assistant — Chicago, IL",
-            "date": "March 2024 – Current",
+            "subheading": "Lab Assistant — Chicago, Illinois",
+            "date": "March 2025 – Current",
             "details": [
-              "Designed and developed a tool to help users navigate repair information, making repairs more accessible and reducing e-waste"
+              "Designed and implemented an interactive system for navigating repair documentation, incorporating user-centered design principles and iterative prototyping"
+            ]
+          },
+          {
+            "heading": "Robotics Teaching Assistant",
+            "subheading": "Teacher’s Assistant — Chicago, IL",
+            "date": "September 2025 – December 2025",
+            "details": [
+              "Taught students essential skills for an introductory robotics course using Python and ROS2",
+              "Supported 20+ students in robotics coursework by debugging code and explaining core concepts"
             ]
           },
           {
             "heading": "Code Your Dreams",
-            "subheading": "Summer Intern — Chicago, IL",
+            "subheading": "Summer Intern — Chicago, Illinois",
             "date": "June 2024 – August 2024",
             "details": [
-              "Created an introductory Python course for Edovo tablets used in 750+ correctional facilities",
-              "Coordinated tasks, meetings, and deadlines for a team of five interns",
-              "Built the REV ION FRC 2023 Starter Bot for robotics education"
-            ]
-          },
-          {
-            "heading": "Watsi",
-            "subheading": "Summer Intern — San Francisco, CA",
-            "date": "June 2023 – August 2023",
-            "details": [
-              "Created templates for donor-facing patient profiles",
-              "Founded the first high school Watsi team and created a fundraising guidebook",
-              "Edited and published nearly 100 patient profiles; trained volunteers in editing"
+              "Developed an introductory Python course available for asynchronous completion through Edovo tablets, allowing incarcerated people to access programming education in 750+ correctional facilities",
+              "Coordinated project tasks, organized meetings, and set deadlines for a team of five interns",
+              "Built the REV ION FRC 2023 Starter Bot for use in introductory robotics education for high school students"
             ]
           },
           {
             "heading": "Ex Libris Café",
-            "subheading": "Shift Lead — Chicago, IL",
+            "subheading": "Shift Lead, Financial Manager — Chicago, Illinois",
             "date": "March 2023 – Current",
             "details": [
-              "Managed shifts while maintaining a full course load",
-              "Ensured cleanliness, safety, and customer service standards",
-              "Recognized with awards and promotions for leadership"
+              "Worked shifts throughout the school year while maintaining a full course load",
+              "Maintained store cleanliness, ensured health and safety regulations were followed and enforced, managed customer transactions, and prepared drinks and food",
+              "Recognized for my dedication and leadership ability through awards and promotions"
             ]
           }
         ]
@@ -68,22 +68,33 @@
         "items": [
           {
             "heading": "Pi Beta Phi",
-            "subheading": "Vice President of Recruitment & Community Relations — Chicago, IL",
-            "date": "April 2023 – Current",
+            "subheading": "Vice President of Recruitment and Vice President of Community Relations — Chicago, Illinois",
+            "date": "April 2023-Current",
             "details": [
-              "Organized 10+ hour recruitment events for 400+ women; exceeded recruitment targets by 70%",
-              "Received training in DEI and leadership strategies",
-              "Tutored local students in literacy skills",
-              "Organized philanthropy event with 600+ attendees raising $10,000+"
+              "Organized and ran a variety of 10+ hour recruitment events involving over 400 women and effectively handled all budgeting",
+              "Exceeded recruitment targets by 70% and set a record for chapter growth",
+              "Tutored local students in literacy skills through Pi Beta Phi’s Read > Lead > Achieve program",
+              "Organized and ran a philanthropy event with over 600 people in attendance which raised over $10,000 for Literacy Programs across the United States"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Projects",
+        "items": [
+          {
+            "heading": "Quotidien",
+            "subheading": "Unity, Game Design, C#",
+            "details": [
+              "Developed a Unity-based game modeling obsessive-compulsive behavioral cycles, implementing custom interaction systems and gameplay mechanics in C#"
             ]
           },
           {
-            "heading": "The University of Chicago",
-            "subheading": "Robotics Teacher’s Assistant — Chicago, IL",
-            "date": "September 2025 – December 2025",
+            "heading": "Wave Gloves",
+            "subheading": "Arduino, Hardware, UX",
             "details": [
-                "Led lab sections guiding students in programming and controlling TurtleBots using ROS (Robot Operating System), emphasizing sensor integration",
-                "Supported students by providing resources, explaining complex robotics concepts, and assisting with debugging code and hardware issues"
+              "Developed a wearable MiDi Instrument and control surface that translates hand movement into expressive musical output using a Xiao RP-2350 and four input sensors",
+              "Designed embedded software for signal processing and sensor integration"
             ]
           }
         ]
@@ -93,18 +104,29 @@
         "items": [
           {
             "heading": "Languages",
-            "details": ["French (conversational reading/writing)", "English (native)"]
+            "details": [
+              "Python, Java, C++, C, JavaScript"
+            ]
           },
           {
-            "heading": "Programming",
-            "details": ["Java, JavaScript, Python, C++, C#, CSS, HTML"]
+            "heading": "Frameworks & Tools",
+            "details": [
+              "React, Flask, Unity (C#), Git, Figma, ROS"
+            ]
           },
           {
-            "heading": "Tools",
-            "details": ["Git, Unity, Flask, React, Figma"]
+            "heading": "Web",
+            "details": [
+              "HTML, CSS"
+            ]
+          },
+          {
+            "heading": "Hardware & Fabrication",
+            "details": [
+              "Arduino, Sensor integration, Fusion 360, Soldering, 3D Modelling and Printing"
+            ]
           }
         ]
       }
     ]
   }
-  
